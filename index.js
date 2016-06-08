@@ -1,10 +1,10 @@
 'use strict';
 
+const canonicalProperties = require('unicode-canonical-property-names');
 const propertyAliases = require('unicode-property-aliases');
-const canonicalNames = require('./data/canonical-names.js');
 
 const matchProperty = function(property) {
-	if (canonicalNames.has(property)) {
+	if (canonicalProperties.has(property)) {
 		return property;
 	}
 	if (propertyAliases.has(property)) {

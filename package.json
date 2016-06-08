@@ -9,12 +9,12 @@
   },
   "files": [
     "LICENSE-MIT.txt",
-    "index.js",
-    "data/canonical-names.js"
+    "index.js"
   ],
   "keywords": [
     "unicode",
-    "loose matching"
+    "unicode properties",
+    "unicode property aliases"
   ],
   "license": "MIT",
   "author": {
@@ -27,15 +27,13 @@
   },
   "bugs": "https://github.com/mathiasbynens/unicode-match-property/issues",
   "dependencies": {
+    "unicode-canonical-property-names": "^1.0.0",
     "unicode-property-aliases": "^1.1.0"
   },
   "devDependencies": {
-    "ava": "*",
-    "jsesc": "^2.2.0",
-    "unicode-9.0.0": "^0.0.1"
+    "ava": "*"
   },
   "scripts": {
-    "build": "node scripts/build.js",
     "test": "ava ./tests"
   }
 }
