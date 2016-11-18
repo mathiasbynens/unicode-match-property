@@ -78,6 +78,14 @@ test(t => {
 		() => matchProperty('ISC'),
 		Error
 	);
+	t.deepEqual(
+		matchProperty('Emoji_Modifier'),
+		'Emoji_Modifier'
+	);
+	t.throws(
+		() => matchProperty('emojimodifier'),
+		Error
+	);
 	t.throws(
 		() => matchProperty('unknown property'),
 		Error

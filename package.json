@@ -27,7 +27,7 @@
   },
   "bugs": "https://github.com/mathiasbynens/unicode-match-property/issues",
   "dependencies": {
-    "unicode-canonical-property-names": "^1.0.0",
+    "unicode-canonical-property-names": "^1.0.2",
     "unicode-property-aliases": "^1.1.0"
   },
   "devDependencies": {
