@@ -1,6 +1,6 @@
 {
   "name": "unicode-match-property",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Match a Unicode property or property alias to its canonical property name without loose matching.",
   "homepage": "https://github.com/mathiasbynens/unicode-match-property",
   "main": "index.js",
