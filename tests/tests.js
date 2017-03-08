@@ -86,6 +86,14 @@ test(t => {
 		() => matchProperty('emojimodifier'),
 		Error
 	);
+	t.deepEqual(
+		matchProperty('Emoji_Component'),
+		'Emoji_Component'
+	);
+	t.throws(
+		() => matchProperty('emojicomponent'),
+		Error
+	);
 	t.throws(
 		() => matchProperty('unknown property'),
 		Error
