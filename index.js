@@ -1,7 +1,7 @@
 'use strict';
 
 const canonicalProperties = require('unicode-canonical-property-names');
-const propertyAliases = require('unicode-property-aliases');
+const propertyAliases = require('unicode-property-aliases-ecmascript');
 
 const matchProperty = function(property) {
 	if (canonicalProperties.has(property)) {

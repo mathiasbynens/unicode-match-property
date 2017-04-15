@@ -1,6 +1,6 @@
 # unicode-match-property [![Build status](https://travis-ci.org/mathiasbynens/unicode-match-property.svg?branch=master)](https://travis-ci.org/mathiasbynens/unicode-match-property)
 
-_unicode-match-property_ matches a given Unicode property or [property alias](https://github.com/mathiasbynens/unicode-property-aliases) to its canonical property name without applying [loose matching](https://github.com/mathiasbynens/unicode-loose-match). Consider it a strict alternative to loose matching.
+_unicode-match-property_ matches a given Unicode property or [property alias](https://github.com/mathiasbynens/unicode-property-aliases-ecmascript) to its canonical property name without applying [loose matching](https://github.com/mathiasbynens/unicode-loose-match) per the algorithm used for [RegExp Unicode property escapes in ECMAScript](https://github.com/tc39/proposal-regexp-unicode-property-escapes). Consider it a strict alternative to loose matching.
 
 ## Installation
 
@@ -26,13 +26,13 @@ This function takes a string `value` and attempts to match it to a canonical Uni
 
 ```js
 // Find the canonical property name:
-matchProperty('blk')
-// → 'Block'
+matchProperty('sc')
+// → 'Script'
 
-matchProperty('Block')
-// → 'Block'
+matchProperty('Script')
+// → 'Script'
 
-matchProperty('block') // Note: incorrect casing.
+matchProperty('script') // Note: incorrect casing.
 // → throws
 ```
 
